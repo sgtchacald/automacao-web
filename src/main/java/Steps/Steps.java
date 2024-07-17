@@ -5,6 +5,8 @@ import com.aventstack.extentreports.util.Assert;
 import io.cucumber.java.pt.Dado;
 import io.cucumber.java.pt.Então;
 import io.cucumber.java.pt.Quando;
+import org.junit.jupiter.api.Assertions;
+import org.junit.jupiter.api.Test;
 
 public class Steps{
 	Page page = new Page();
@@ -50,7 +52,8 @@ public class Steps{
 
 	@Então("^o site exibe a mensagem de sucesso \"([^\"]*)\"$")
 	public void o_site_exibe_a_mensagem_de_sucesso(String msg) throws Throwable {
-		//Assert(page.validaMensagemSucesso(msg), "Erro! Os valores não conferem, favor verificar.");
+		//Assert();
+		Assertions.assertTrue(page.validaMensagemSucesso(msg), "Erro! Os valores não conferem, favor verificar.");
 	}
 	
 }

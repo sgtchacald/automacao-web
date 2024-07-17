@@ -35,7 +35,7 @@
 <a href="#"><span class="badge badge-primary"></span></a>
 </li>
 <li class="m-r-10">
-<a href="#"><span class="badge badge-primary">jul. 16, 2024 04:51:37 PM</span></a>
+<a href="#"><span class="badge badge-primary">jul. 17, 2024 10:54:11 AM</span></a>
 </li>
 </ul>
 </div>
@@ -66,6 +66,7 @@
 <li class="dropdown">
 <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-exclamation-circle"></i></a>
 <ul id="status-toggle" class="dropdown-menu dropdown-md p-v-0">
+<a class="dropdown-item" status="pass" href="#"><span>Pass</span><span class="status success"></span></a>
 <a class="dropdown-item" status="fail" href="#"><span>Fail</span><span class="status danger"></span></a>
 <div class="dropdown-divider"></div>
 <a status="clear" class="dropdown-item" href="#"><span>Clear</span><span class="pull-right"><i class="fa fa-close"></i></span></a>
@@ -74,25 +75,25 @@
 </ul>
 </div>    <div class="test-list-wrapper scrollable">
       <ul class="test-list-item">
-        <li class="test-item"  status="fail" test-id="1"
+        <li class="test-item"  status="pass" test-id="1"
           author=""
           tag=""
           device="">
           <div class="test-detail">
-            <p class="name">Acessa site diegocordeiro.com.br e envia um comentário</p>
+            <p class="name">Acessa o sistema PCA, valida se os campos existem e faz login</p>
             <p class="text-sm">
-              <span>16:51:37</span> / <span>00:00:08:423</span>
-              <span class="badge fail-bg log float-right">Fail</span>
+              <span>10:54:12</span> / <span>00:00:14:803</span>
+              <span class="badge pass-bg log float-right">Pass</span>
             </p>
           </div>
           <div class="test-contents d-none">
 <div class="detail-head">
 <div class="p-v-10">
 <div class="info">
-<h5 class="test-status text-fail">Acessa site diegocordeiro.com.br e envia um comentário</h5>
-<span class='badge badge-success'>07.16.2024 16:51:37</span>
-<span class='badge badge-danger'>07.16.2024 16:51:46</span>
-<span class='badge badge-default'>00:00:08:423</span>
+<h5 class="test-status text-pass">Acessa o sistema PCA, valida se os campos existem e faz login</h5>
+<span class='badge badge-success'>07.17.2024 10:54:12</span>
+<span class='badge badge-danger'>07.17.2024 10:54:26</span>
+<span class='badge badge-default'>00:00:14:803</span>
 &middot; <span class='uri-anchor badge badge-default'>#test-id=1</span>
 <span title='Skip to the next failed step' class='badge badge-danger pointer float-right ne ml-1'><i class="fa fa-fast-forward"></i></span>
 <span title='Collapse all nodes' class='badge badge-default pointer float-right ct ml-1'><i class="fa fa-compress"></i></span>
@@ -105,34 +106,322 @@
   <tbody>
       <tr class="event-row">
         <td><span class="badge log info-bg">Info</span></td>
-        <td>16:51:37</td>
+        <td>10:54:12</td>
         <td>
           Iniciando Teste.
         </td>
       </tr>
       <tr class="event-row">
         <td><span class="badge log info-bg">Info</span></td>
-        <td>16:51:39</td>
+        <td>10:54:13</td>
         <td>
-          Executando Cenário: Acessa site diegocordeiro.com.br e envia um comentário
+          Executando Cenário: Acessa o sistema PCA, valida se os campos existem e faz login
         </td>
       </tr>
       <tr class="event-row">
         <td><span class="badge log info-bg">Info</span></td>
-        <td>16:51:44</td>
+        <td>10:54:15</td>
         <td>
-          Elemento não foi encontrado! Expected condition failed: waiting for element to be clickable: Proxy element for: DefaultElementLocator 'By.cssSelector: #header > div > div > div.col-xs-2.text-right > div > a' (tried for 5 second(s) with 5000 milliseconds interval)
+          Dado que eu acesse o sistema 'https://hpca.rj.gov.br/login'
+    <div class="row mb-3"><div class="col-md-3">
+    
+
+<img data-featherlight='./screenshots/2024_07_17_10_54_14.png' src="./screenshots/2024_07_17_10_54_14.png">
+  
+    
+
+    </div></div>
         </td>
       </tr>
       <tr class="event-row">
         <td><span class="badge log info-bg">Info</span></td>
-        <td>16:51:46</td>
+        <td>10:54:16</td>
+        <td>
+          E que eu valide a existência do campo CPF
+    <div class="row mb-3"><div class="col-md-3">
+    
+
+<img data-featherlight='./screenshots/2024_07_17_10_54_15.png' src="./screenshots/2024_07_17_10_54_15.png">
+  
+    
+
+    </div></div>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>10:54:20</td>
+        <td>
+          E que eu preencha o campo cpf com o valor '990.231.330-21'
+    <div class="row mb-3"><div class="col-md-3">
+    
+
+<img data-featherlight='./screenshots/2024_07_17_10_54_18.png' src="./screenshots/2024_07_17_10_54_18.png">
+  
+    
+
+    </div></div>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>10:54:21</td>
+        <td>
+          E que eu valide a existência do campo SENHA
+    <div class="row mb-3"><div class="col-md-3">
+    
+
+<img data-featherlight='./screenshots/2024_07_17_10_54_20.png' src="./screenshots/2024_07_17_10_54_20.png">
+  
+    
+
+    </div></div>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>10:54:22</td>
+        <td>
+          E que eu preencha o campo senha com o valor 'Sublog123*'
+    <div class="row mb-3"><div class="col-md-3">
+    
+
+<img data-featherlight='./screenshots/2024_07_17_10_54_21.png' src="./screenshots/2024_07_17_10_54_21.png">
+  
+    
+
+    </div></div>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>10:54:24</td>
+        <td>
+          Quando eu clico no botão acessar'
+    <div class="row mb-3"><div class="col-md-3">
+    
+
+<img data-featherlight='./screenshots/2024_07_17_10_54_23.png' src="./screenshots/2024_07_17_10_54_23.png">
+  
+    
+
+    </div></div>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>10:54:25</td>
+        <td>
+          Então o sistema entra na pagina principal e exibe o logo do PCA'
+    <div class="row mb-3"><div class="col-md-3">
+    
+
+<img data-featherlight='./screenshots/2024_07_17_10_54_24.png' src="./screenshots/2024_07_17_10_54_24.png">
+  
+    
+
+    </div></div>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>10:54:26</td>
         <td>
           Finalizando Instâncias
     <div class="row mb-3"><div class="col-md-3">
     
 
-<img data-featherlight='./screenshots/2024_07_16_16_51_44.png' src="./screenshots/2024_07_16_16_51_44.png">
+<img data-featherlight='./screenshots/2024_07_17_10_54_25.png' src="./screenshots/2024_07_17_10_54_25.png">
+  
+    
+
+    </div></div>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>10:54:26</td>
+        <td>
+          Cenário executado com sucesso.
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="fail" test-id="2"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">Acessa o sistema PCA, valida se os campos existem e faz login</p>
+            <p class="text-sm">
+              <span>10:54:28</span> / <span>00:00:14:764</span>
+              <span class="badge fail-bg log float-right">Fail</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-fail">Acessa o sistema PCA, valida se os campos existem e faz login</h5>
+<span class='badge badge-success'>07.17.2024 10:54:28</span>
+<span class='badge badge-danger'>07.17.2024 10:54:42</span>
+<span class='badge badge-default'>00:00:14:764</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=2</span>
+<span title='Skip to the next failed step' class='badge badge-danger pointer float-right ne ml-1'><i class="fa fa-fast-forward"></i></span>
+<span title='Collapse all nodes' class='badge badge-default pointer float-right ct ml-1'><i class="fa fa-compress"></i></span>
+<span title='Expand all nodes' class='badge badge-default pointer float-right et'><i class="fa fa-expand"></i></span>
+</div>
+</div>
+</div><div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>10:54:28</td>
+        <td>
+          Iniciando Teste.
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>10:54:29</td>
+        <td>
+          Executando Cenário: Acessa o sistema PCA, valida se os campos existem e faz login
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>10:54:31</td>
+        <td>
+          Dado que eu acesse o sistema 'https://hpca.rj.gov.br/login'
+    <div class="row mb-3"><div class="col-md-3">
+    
+
+<img data-featherlight='./screenshots/2024_07_17_10_54_29.png' src="./screenshots/2024_07_17_10_54_29.png">
+  
+    
+
+    </div></div>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>10:54:32</td>
+        <td>
+          E que eu valide a existência do campo CPF
+    <div class="row mb-3"><div class="col-md-3">
+    
+
+<img data-featherlight='./screenshots/2024_07_17_10_54_31.png' src="./screenshots/2024_07_17_10_54_31.png">
+  
+    
+
+    </div></div>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>10:54:35</td>
+        <td>
+          E que eu preencha o campo cpf com o valor '990.231.330-22'
+    <div class="row mb-3"><div class="col-md-3">
+    
+
+<img data-featherlight='./screenshots/2024_07_17_10_54_34.png' src="./screenshots/2024_07_17_10_54_34.png">
+  
+    
+
+    </div></div>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>10:54:36</td>
+        <td>
+          E que eu valide a existência do campo SENHA
+    <div class="row mb-3"><div class="col-md-3">
+    
+
+<img data-featherlight='./screenshots/2024_07_17_10_54_35.png' src="./screenshots/2024_07_17_10_54_35.png">
+  
+    
+
+    </div></div>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>10:54:38</td>
+        <td>
+          E que eu preencha o campo senha com o valor 'Sublog1237*'
+    <div class="row mb-3"><div class="col-md-3">
+    
+
+<img data-featherlight='./screenshots/2024_07_17_10_54_36.png' src="./screenshots/2024_07_17_10_54_36.png">
+  
+    
+
+    </div></div>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>10:54:39</td>
+        <td>
+          Quando eu clico no botão acessar'
+    <div class="row mb-3"><div class="col-md-3">
+    
+
+<img data-featherlight='./screenshots/2024_07_17_10_54_38.png' src="./screenshots/2024_07_17_10_54_38.png">
+  
+    
+
+    </div></div>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>10:54:40</td>
+        <td>
+          Elemento não foi encontrado! Expected condition failed: waiting for element to be clickable: Proxy element for: DefaultElementLocator 'By.xpath: //*[contains(text(),'Fechar')]' (tried for 1 second(s) with 1000 milliseconds interval)
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>10:54:41</td>
+        <td>
+          Elemento 'Proxy element for: DefaultElementLocator 'By.xpath: //*[contains(text(),'Fechar')]'' não encontrado. no such element: Unable to locate element: {"method":"xpath","selector":"//*[contains(text(),'Fechar')]"}
+  (Session info: chrome=126.0.6478.127)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: '4.22.0', revision: 'c5f3146703*'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [f622cf5f37f436046920ddf9978c69f6, findElement {using=xpath, value=//*[contains(text(),'Fechar')]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 126.0.6478.127, chrome: {chromedriverVersion: 126.0.6478.182 (5b5d8292ddf..., userDataDir: C:\Users\DDSCOR~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:56997}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:56997/devtoo..., se:cdpVersion: 126.0.6478.127, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: f622cf5f37f436046920ddf9978c69f6
+    <div class="row mb-3"><div class="col-md-3">
+    
+
+<img data-featherlight='./screenshots/2024_07_17_10_54_40.png' src="./screenshots/2024_07_17_10_54_40.png">
+  
+    
+
+    </div></div>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>10:54:42</td>
+        <td>
+          Finalizando Instâncias
+    <div class="row mb-3"><div class="col-md-3">
+    
+
+<img data-featherlight='./screenshots/2024_07_17_10_54_41.png' src="./screenshots/2024_07_17_10_54_41.png">
   
     
 
@@ -141,7 +430,767 @@
       </tr>
       <tr class="event-row">
         <td><span class="badge log fail-bg">Fail</span></td>
-        <td>16:51:46</td>
+        <td>10:54:42</td>
+        <td>
+          Erro encontrado durante a execução.
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="fail" test-id="3"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">Acessa o sistema PCA, valida se os campos existem e faz login</p>
+            <p class="text-sm">
+              <span>10:54:44</span> / <span>00:00:14:533</span>
+              <span class="badge fail-bg log float-right">Fail</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-fail">Acessa o sistema PCA, valida se os campos existem e faz login</h5>
+<span class='badge badge-success'>07.17.2024 10:54:44</span>
+<span class='badge badge-danger'>07.17.2024 10:54:58</span>
+<span class='badge badge-default'>00:00:14:533</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=3</span>
+<span title='Skip to the next failed step' class='badge badge-danger pointer float-right ne ml-1'><i class="fa fa-fast-forward"></i></span>
+<span title='Collapse all nodes' class='badge badge-default pointer float-right ct ml-1'><i class="fa fa-compress"></i></span>
+<span title='Expand all nodes' class='badge badge-default pointer float-right et'><i class="fa fa-expand"></i></span>
+</div>
+</div>
+</div><div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>10:54:44</td>
+        <td>
+          Iniciando Teste.
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>10:54:45</td>
+        <td>
+          Executando Cenário: Acessa o sistema PCA, valida se os campos existem e faz login
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>10:54:46</td>
+        <td>
+          Dado que eu acesse o sistema 'https://hpca.rj.gov.br/login'
+    <div class="row mb-3"><div class="col-md-3">
+    
+
+<img data-featherlight='./screenshots/2024_07_17_10_54_45.png' src="./screenshots/2024_07_17_10_54_45.png">
+  
+    
+
+    </div></div>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>10:54:48</td>
+        <td>
+          E que eu valide a existência do campo CPF
+    <div class="row mb-3"><div class="col-md-3">
+    
+
+<img data-featherlight='./screenshots/2024_07_17_10_54_46.png' src="./screenshots/2024_07_17_10_54_46.png">
+  
+    
+
+    </div></div>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>10:54:51</td>
+        <td>
+          E que eu preencha o campo cpf com o valor '990.231.330-21'
+    <div class="row mb-3"><div class="col-md-3">
+    
+
+<img data-featherlight='./screenshots/2024_07_17_10_54_50.png' src="./screenshots/2024_07_17_10_54_50.png">
+  
+    
+
+    </div></div>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>10:54:52</td>
+        <td>
+          E que eu valide a existência do campo SENHA
+    <div class="row mb-3"><div class="col-md-3">
+    
+
+<img data-featherlight='./screenshots/2024_07_17_10_54_51.png' src="./screenshots/2024_07_17_10_54_51.png">
+  
+    
+
+    </div></div>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>10:54:53</td>
+        <td>
+          E que eu preencha o campo senha com o valor 'Sublog1236*'
+    <div class="row mb-3"><div class="col-md-3">
+    
+
+<img data-featherlight='./screenshots/2024_07_17_10_54_52.png' src="./screenshots/2024_07_17_10_54_52.png">
+  
+    
+
+    </div></div>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>10:54:55</td>
+        <td>
+          Quando eu clico no botão acessar'
+    <div class="row mb-3"><div class="col-md-3">
+    
+
+<img data-featherlight='./screenshots/2024_07_17_10_54_54.png' src="./screenshots/2024_07_17_10_54_54.png">
+  
+    
+
+    </div></div>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>10:54:56</td>
+        <td>
+          Elemento não foi encontrado! Expected condition failed: waiting for element to be clickable: Proxy element for: DefaultElementLocator 'By.xpath: //*[contains(text(),'Fechar')]' (tried for 1 second(s) with 1000 milliseconds interval)
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>10:54:57</td>
+        <td>
+          Elemento 'Proxy element for: DefaultElementLocator 'By.xpath: //*[contains(text(),'Fechar')]'' não encontrado. no such element: Unable to locate element: {"method":"xpath","selector":"//*[contains(text(),'Fechar')]"}
+  (Session info: chrome=126.0.6478.127)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: '4.22.0', revision: 'c5f3146703*'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [fd1c25cceac656615fd2b292652bf389, findElement {using=xpath, value=//*[contains(text(),'Fechar')]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 126.0.6478.127, chrome: {chromedriverVersion: 126.0.6478.182 (5b5d8292ddf..., userDataDir: C:\Users\DDSCOR~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:57044}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:57044/devtoo..., se:cdpVersion: 126.0.6478.127, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: fd1c25cceac656615fd2b292652bf389
+    <div class="row mb-3"><div class="col-md-3">
+    
+
+<img data-featherlight='./screenshots/2024_07_17_10_54_56.png' src="./screenshots/2024_07_17_10_54_56.png">
+  
+    
+
+    </div></div>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>10:54:58</td>
+        <td>
+          Finalizando Instâncias
+    <div class="row mb-3"><div class="col-md-3">
+    
+
+<img data-featherlight='./screenshots/2024_07_17_10_54_57.png' src="./screenshots/2024_07_17_10_54_57.png">
+  
+    
+
+    </div></div>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log fail-bg">Fail</span></td>
+        <td>10:54:58</td>
+        <td>
+          Erro encontrado durante a execução.
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="fail" test-id="4"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">Acessa o sistema PCA, valida se os campos existem e faz login</p>
+            <p class="text-sm">
+              <span>10:54:59</span> / <span>00:00:14:596</span>
+              <span class="badge fail-bg log float-right">Fail</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-fail">Acessa o sistema PCA, valida se os campos existem e faz login</h5>
+<span class='badge badge-success'>07.17.2024 10:54:59</span>
+<span class='badge badge-danger'>07.17.2024 10:55:14</span>
+<span class='badge badge-default'>00:00:14:596</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=4</span>
+<span title='Skip to the next failed step' class='badge badge-danger pointer float-right ne ml-1'><i class="fa fa-fast-forward"></i></span>
+<span title='Collapse all nodes' class='badge badge-default pointer float-right ct ml-1'><i class="fa fa-compress"></i></span>
+<span title='Expand all nodes' class='badge badge-default pointer float-right et'><i class="fa fa-expand"></i></span>
+</div>
+</div>
+</div><div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>10:54:59</td>
+        <td>
+          Iniciando Teste.
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>10:55:00</td>
+        <td>
+          Executando Cenário: Acessa o sistema PCA, valida se os campos existem e faz login
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>10:55:02</td>
+        <td>
+          Dado que eu acesse o sistema 'https://hpca.rj.gov.br/login'
+    <div class="row mb-3"><div class="col-md-3">
+    
+
+<img data-featherlight='./screenshots/2024_07_17_10_55_01.png' src="./screenshots/2024_07_17_10_55_01.png">
+  
+    
+
+    </div></div>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>10:55:03</td>
+        <td>
+          E que eu valide a existência do campo CPF
+    <div class="row mb-3"><div class="col-md-3">
+    
+
+<img data-featherlight='./screenshots/2024_07_17_10_55_02.png' src="./screenshots/2024_07_17_10_55_02.png">
+  
+    
+
+    </div></div>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>10:55:07</td>
+        <td>
+          E que eu preencha o campo cpf com o valor '990.231.330-21'
+    <div class="row mb-3"><div class="col-md-3">
+    
+
+<img data-featherlight='./screenshots/2024_07_17_10_55_05.png' src="./screenshots/2024_07_17_10_55_05.png">
+  
+    
+
+    </div></div>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>10:55:08</td>
+        <td>
+          E que eu valide a existência do campo SENHA
+    <div class="row mb-3"><div class="col-md-3">
+    
+
+<img data-featherlight='./screenshots/2024_07_17_10_55_07.png' src="./screenshots/2024_07_17_10_55_07.png">
+  
+    
+
+    </div></div>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>10:55:09</td>
+        <td>
+          E que eu preencha o campo senha com o valor 'Sublog1236*'
+    <div class="row mb-3"><div class="col-md-3">
+    
+
+<img data-featherlight='./screenshots/2024_07_17_10_55_08.png' src="./screenshots/2024_07_17_10_55_08.png">
+  
+    
+
+    </div></div>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>10:55:11</td>
+        <td>
+          Quando eu clico no botão acessar'
+    <div class="row mb-3"><div class="col-md-3">
+    
+
+<img data-featherlight='./screenshots/2024_07_17_10_55_09.png' src="./screenshots/2024_07_17_10_55_09.png">
+  
+    
+
+    </div></div>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>10:55:12</td>
+        <td>
+          Elemento não foi encontrado! Expected condition failed: waiting for element to be clickable: Proxy element for: DefaultElementLocator 'By.xpath: //*[contains(text(),'Fechar')]' (tried for 1 second(s) with 1000 milliseconds interval)
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>10:55:13</td>
+        <td>
+          Elemento 'Proxy element for: DefaultElementLocator 'By.xpath: //*[contains(text(),'Fechar')]'' não encontrado. no such element: Unable to locate element: {"method":"xpath","selector":"//*[contains(text(),'Fechar')]"}
+  (Session info: chrome=126.0.6478.127)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: '4.22.0', revision: 'c5f3146703*'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [f5a2ebea368779c0b75b8058e88237bc, findElement {using=xpath, value=//*[contains(text(),'Fechar')]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 126.0.6478.127, chrome: {chromedriverVersion: 126.0.6478.182 (5b5d8292ddf..., userDataDir: C:\Users\DDSCOR~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:57088}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:57088/devtoo..., se:cdpVersion: 126.0.6478.127, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: f5a2ebea368779c0b75b8058e88237bc
+    <div class="row mb-3"><div class="col-md-3">
+    
+
+<img data-featherlight='./screenshots/2024_07_17_10_55_12.png' src="./screenshots/2024_07_17_10_55_12.png">
+  
+    
+
+    </div></div>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>10:55:14</td>
+        <td>
+          Finalizando Instâncias
+    <div class="row mb-3"><div class="col-md-3">
+    
+
+<img data-featherlight='./screenshots/2024_07_17_10_55_13.png' src="./screenshots/2024_07_17_10_55_13.png">
+  
+    
+
+    </div></div>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log fail-bg">Fail</span></td>
+        <td>10:55:14</td>
+        <td>
+          Erro encontrado durante a execução.
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="fail" test-id="5"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">Acessa o sistema PCA, valida se os campos existem e faz login</p>
+            <p class="text-sm">
+              <span>10:55:15</span> / <span>00:00:14:429</span>
+              <span class="badge fail-bg log float-right">Fail</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-fail">Acessa o sistema PCA, valida se os campos existem e faz login</h5>
+<span class='badge badge-success'>07.17.2024 10:55:15</span>
+<span class='badge badge-danger'>07.17.2024 10:55:30</span>
+<span class='badge badge-default'>00:00:14:429</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=5</span>
+<span title='Skip to the next failed step' class='badge badge-danger pointer float-right ne ml-1'><i class="fa fa-fast-forward"></i></span>
+<span title='Collapse all nodes' class='badge badge-default pointer float-right ct ml-1'><i class="fa fa-compress"></i></span>
+<span title='Expand all nodes' class='badge badge-default pointer float-right et'><i class="fa fa-expand"></i></span>
+</div>
+</div>
+</div><div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>10:55:15</td>
+        <td>
+          Iniciando Teste.
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>10:55:16</td>
+        <td>
+          Executando Cenário: Acessa o sistema PCA, valida se os campos existem e faz login
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>10:55:18</td>
+        <td>
+          Dado que eu acesse o sistema 'https://hpca.rj.gov.br/login'
+    <div class="row mb-3"><div class="col-md-3">
+    
+
+<img data-featherlight='./screenshots/2024_07_17_10_55_17.png' src="./screenshots/2024_07_17_10_55_17.png">
+  
+    
+
+    </div></div>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>10:55:19</td>
+        <td>
+          E que eu valide a existência do campo CPF
+    <div class="row mb-3"><div class="col-md-3">
+    
+
+<img data-featherlight='./screenshots/2024_07_17_10_55_18.png' src="./screenshots/2024_07_17_10_55_18.png">
+  
+    
+
+    </div></div>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>10:55:22</td>
+        <td>
+          E que eu preencha o campo cpf com o valor '990.231.330-21'
+    <div class="row mb-3"><div class="col-md-3">
+    
+
+<img data-featherlight='./screenshots/2024_07_17_10_55_21.png' src="./screenshots/2024_07_17_10_55_21.png">
+  
+    
+
+    </div></div>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>10:55:24</td>
+        <td>
+          E que eu valide a existência do campo SENHA
+    <div class="row mb-3"><div class="col-md-3">
+    
+
+<img data-featherlight='./screenshots/2024_07_17_10_55_22.png' src="./screenshots/2024_07_17_10_55_22.png">
+  
+    
+
+    </div></div>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>10:55:25</td>
+        <td>
+          E que eu preencha o campo senha com o valor 'Sublog123.*'
+    <div class="row mb-3"><div class="col-md-3">
+    
+
+<img data-featherlight='./screenshots/2024_07_17_10_55_24.png' src="./screenshots/2024_07_17_10_55_24.png">
+  
+    
+
+    </div></div>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>10:55:26</td>
+        <td>
+          Quando eu clico no botão acessar'
+    <div class="row mb-3"><div class="col-md-3">
+    
+
+<img data-featherlight='./screenshots/2024_07_17_10_55_25.png' src="./screenshots/2024_07_17_10_55_25.png">
+  
+    
+
+    </div></div>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>10:55:27</td>
+        <td>
+          Elemento não foi encontrado! Expected condition failed: waiting for element to be clickable: Proxy element for: DefaultElementLocator 'By.xpath: //*[contains(text(),'Fechar')]' (tried for 1 second(s) with 1000 milliseconds interval)
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>10:55:28</td>
+        <td>
+          Elemento 'Proxy element for: DefaultElementLocator 'By.xpath: //*[contains(text(),'Fechar')]'' não encontrado. no such element: Unable to locate element: {"method":"xpath","selector":"//*[contains(text(),'Fechar')]"}
+  (Session info: chrome=126.0.6478.127)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: '4.22.0', revision: 'c5f3146703*'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [650854be837c456ebb30472971ae9f9e, findElement {using=xpath, value=//*[contains(text(),'Fechar')]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 126.0.6478.127, chrome: {chromedriverVersion: 126.0.6478.182 (5b5d8292ddf..., userDataDir: C:\Users\DDSCOR~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:57138}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:57138/devtoo..., se:cdpVersion: 126.0.6478.127, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 650854be837c456ebb30472971ae9f9e
+    <div class="row mb-3"><div class="col-md-3">
+    
+
+<img data-featherlight='./screenshots/2024_07_17_10_55_27.png' src="./screenshots/2024_07_17_10_55_27.png">
+  
+    
+
+    </div></div>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>10:55:30</td>
+        <td>
+          Finalizando Instâncias
+    <div class="row mb-3"><div class="col-md-3">
+    
+
+<img data-featherlight='./screenshots/2024_07_17_10_55_29.png' src="./screenshots/2024_07_17_10_55_29.png">
+  
+    
+
+    </div></div>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log fail-bg">Fail</span></td>
+        <td>10:55:30</td>
+        <td>
+          Erro encontrado durante a execução.
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="fail" test-id="6"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">Acessa o sistema PCA, valida se os campos existem e faz login</p>
+            <p class="text-sm">
+              <span>10:55:31</span> / <span>00:00:14:290</span>
+              <span class="badge fail-bg log float-right">Fail</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-fail">Acessa o sistema PCA, valida se os campos existem e faz login</h5>
+<span class='badge badge-success'>07.17.2024 10:55:31</span>
+<span class='badge badge-danger'>07.17.2024 10:55:45</span>
+<span class='badge badge-default'>00:00:14:290</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=6</span>
+<span title='Skip to the next failed step' class='badge badge-danger pointer float-right ne ml-1'><i class="fa fa-fast-forward"></i></span>
+<span title='Collapse all nodes' class='badge badge-default pointer float-right ct ml-1'><i class="fa fa-compress"></i></span>
+<span title='Expand all nodes' class='badge badge-default pointer float-right et'><i class="fa fa-expand"></i></span>
+</div>
+</div>
+</div><div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>10:55:31</td>
+        <td>
+          Iniciando Teste.
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>10:55:32</td>
+        <td>
+          Executando Cenário: Acessa o sistema PCA, valida se os campos existem e faz login
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>10:55:33</td>
+        <td>
+          Dado que eu acesse o sistema 'https://hpca.rj.gov.br/login'
+    <div class="row mb-3"><div class="col-md-3">
+    
+
+<img data-featherlight='./screenshots/2024_07_17_10_55_32.png' src="./screenshots/2024_07_17_10_55_32.png">
+  
+    
+
+    </div></div>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>10:55:35</td>
+        <td>
+          E que eu valide a existência do campo CPF
+    <div class="row mb-3"><div class="col-md-3">
+    
+
+<img data-featherlight='./screenshots/2024_07_17_10_55_33.png' src="./screenshots/2024_07_17_10_55_33.png">
+  
+    
+
+    </div></div>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>10:55:38</td>
+        <td>
+          E que eu preencha o campo cpf com o valor '990.231.330-21'
+    <div class="row mb-3"><div class="col-md-3">
+    
+
+<img data-featherlight='./screenshots/2024_07_17_10_55_37.png' src="./screenshots/2024_07_17_10_55_37.png">
+  
+    
+
+    </div></div>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>10:55:39</td>
+        <td>
+          E que eu valide a existência do campo SENHA
+    <div class="row mb-3"><div class="col-md-3">
+    
+
+<img data-featherlight='./screenshots/2024_07_17_10_55_38.png' src="./screenshots/2024_07_17_10_55_38.png">
+  
+    
+
+    </div></div>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>10:55:40</td>
+        <td>
+          E que eu preencha o campo senha com o valor 'Sublog123c*'
+    <div class="row mb-3"><div class="col-md-3">
+    
+
+<img data-featherlight='./screenshots/2024_07_17_10_55_39.png' src="./screenshots/2024_07_17_10_55_39.png">
+  
+    
+
+    </div></div>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>10:55:42</td>
+        <td>
+          Quando eu clico no botão acessar'
+    <div class="row mb-3"><div class="col-md-3">
+    
+
+<img data-featherlight='./screenshots/2024_07_17_10_55_41.png' src="./screenshots/2024_07_17_10_55_41.png">
+  
+    
+
+    </div></div>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>10:55:43</td>
+        <td>
+          Elemento não foi encontrado! Expected condition failed: waiting for element to be clickable: Proxy element for: DefaultElementLocator 'By.xpath: //*[contains(text(),'Fechar')]' (tried for 1 second(s) with 1000 milliseconds interval)
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>10:55:44</td>
+        <td>
+          Elemento 'Proxy element for: DefaultElementLocator 'By.xpath: //*[contains(text(),'Fechar')]'' não encontrado. no such element: Unable to locate element: {"method":"xpath","selector":"//*[contains(text(),'Fechar')]"}
+  (Session info: chrome=126.0.6478.127)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: '4.22.0', revision: 'c5f3146703*'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [aa47703c72d2135a2e0ceeee299c95bf, findElement {using=xpath, value=//*[contains(text(),'Fechar')]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 126.0.6478.127, chrome: {chromedriverVersion: 126.0.6478.182 (5b5d8292ddf..., userDataDir: C:\Users\DDSCOR~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:57188}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:57188/devtoo..., se:cdpVersion: 126.0.6478.127, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: aa47703c72d2135a2e0ceeee299c95bf
+    <div class="row mb-3"><div class="col-md-3">
+    
+
+<img data-featherlight='./screenshots/2024_07_17_10_55_43.png' src="./screenshots/2024_07_17_10_55_43.png">
+  
+    
+
+    </div></div>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>10:55:45</td>
+        <td>
+          Finalizando Instâncias
+    <div class="row mb-3"><div class="col-md-3">
+    
+
+<img data-featherlight='./screenshots/2024_07_17_10_55_44.png' src="./screenshots/2024_07_17_10_55_44.png">
+  
+    
+
+    </div></div>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log fail-bg">Fail</span></td>
+        <td>10:55:45</td>
         <td>
           Erro encontrado durante a execução.
         </td>
@@ -165,25 +1214,25 @@
 <div class="col-md-3">
 <div class="card"><div class="card-body">
 <p class="m-b-0">Started</p>
-<h3>jul. 16, 2024 04:51:37 PM</h3>
+<h3>jul. 17, 2024 10:54:11 AM</h3>
 </div></div>
 </div>
 <div class="col-md-3">
 <div class="card"><div class="card-body">
 <p class="m-b-0">Ended</p>
-<h3>jul. 16, 2024 04:51:46 PM</h3>
+<h3>jul. 17, 2024 10:55:45 AM</h3>
 </div></div>
 </div>
 <div class="col-md-3">
 <div class="card"><div class="card-body">
 <p class="m-b-0 text-pass">Tests Passed</p>
-<h3>0</h3>
+<h3>1</h3>
 </div></div>
 </div>
 <div class="col-md-3">
 <div class="card"><div class="card-body">
 <p class="m-b-0 text-fail">Tests Failed</p>
-<h3>1</h3>
+<h3>5</h3>
 </div></div>
 </div>
 </div>
@@ -199,12 +1248,12 @@
 </div>
 </div>
 <div class="card-footer">
-<div><small data-tooltip='0%'>
-<b>0</b> tests passed
+<div><small data-tooltip='16%'>
+<b>1</b> tests passed
 </small>
 </div>
 <div>
-<small data-tooltip='100%'><b>1</b> tests failed,
+<small data-tooltip='83%'><b>5</b> tests failed,
 <b>0</b> skipped, <b data-tooltip='0%'>0</b> others
 </small>
 </div>
@@ -222,10 +1271,10 @@
 </div>
 </div>
 <div class="card-footer">
-<div><small data-tooltip='0%'><b>0</b> events passed</small></div>
+<div><small data-tooltip='1%'><b>1</b> events passed</small></div>
 <div>
-<small data-tooltip='20%'><b>1</b> events failed,
-<b data-tooltip='%'>4</b> others
+<small data-tooltip='7%'><b>5</b> events failed,
+<b data-tooltip='%'>65</b> others
 </small>
 </div>
 </div>
@@ -241,7 +1290,7 @@
 </div></div>
 <script>
 var timeline = {
-"Acessa site diegocordeiro.com.br e envia um comentário":8.423
+"Acessa o sistema PCA, valida se os campos existem e faz login":14.803,"Acessa o sistema PCA, valida se os campos existem e faz login":14.764,"Acessa o sistema PCA, valida se os campos existem e faz login":14.533,"Acessa o sistema PCA, valida se os campos existem e faz login":14.596,"Acessa o sistema PCA, valida se os campos existem e faz login":14.429,"Acessa o sistema PCA, valida se os campos existem e faz login":14.29
 };
 </script>
 <div class="row">
@@ -250,8 +1299,8 @@ var timeline = {
 <script>
 var statusGroup = {
 parentCount: 5,
-passParent: 0,
-failParent: 1,
+passParent: 1,
+failParent: 5,
 warningParent: 0,
 skipParent: 0,
 childCount: 5,
@@ -267,11 +1316,11 @@ warningGrandChild: 0,
 skipGrandChild: 0,
 infoGrandChild: 0,
 eventsCount: 5,
-passEvents: 0,
-failEvents: 1,
+passEvents: 1,
+failEvents: 5,
 warningEvents: 0,
 skipEvents: 0,
-infoEvents: 4
+infoEvents: 65
 };
 </script>        </div>
       </div>

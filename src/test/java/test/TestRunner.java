@@ -15,7 +15,7 @@ import org.testng.annotations.Test;
 		monochrome = true, 
 		dryRun = false, 
 		//strict = true,
-		tags = "{@acessaSiteDiegoCordeiro}"
+		tags = "@acessaSistemaPCA"
 		)
 
 @Test(priority = 11)

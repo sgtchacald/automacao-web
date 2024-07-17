@@ -68,7 +68,7 @@ public class seleniumUtils {
 				elementoOK = true;
 			}
 		} catch (Exception e) {
-			ReportUtils.logMensagem(Status.INFO, "Elemento '" + element + "' não encontrado. " + e.getMessage());
+			ReportUtils.logMensagem(Status.INFO, "Elemento '" + element + "' não encontrado. " + e.getMessage(), getScreenshotReport());
 		}
 		return elementoOK;
 	}
