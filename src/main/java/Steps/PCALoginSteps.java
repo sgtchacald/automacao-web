@@ -1,7 +1,6 @@
 package Steps;
 
-import Pages.LoginPage;
-import Pages.Page;
+import Pages.PCALoginPage;
 import Utils.ReportUtils;
 import Utils.seleniumUtils;
 import com.aventstack.extentreports.Status;
@@ -11,8 +10,16 @@ import io.cucumber.java.pt.Então;
 import io.cucumber.java.pt.Quando;
 import org.junit.jupiter.api.Assertions;
 
-public class LoginSteps {
-	LoginPage page = new LoginPage();
+import static Utils.seleniumUtils.driver;
+
+public class PCALoginSteps {
+	PCALoginPage page = new PCALoginPage();
+
+	@Dado("^que eu esteja autenticado no sistema PCA$")
+	public void que_eu_esteja_autenticado_no_sistema_pca() throws Throwable {
+		Assertions.assertTrue(page.fazAutenticacaoPCA(), "Erro! Não foi possível validar a autenticação.");
+		ReportUtils.logMensagem(Status.INFO, "Dado que eu esteja autenticado no sistema PCA", seleniumUtils.getScreenshotReport());
+	}
 	
 	@Dado("^que eu acesse o sistema \"([^\"]*)\"$")
 	public void que_eu_acesse_o_sistema(String url) throws Throwable {
@@ -45,7 +52,7 @@ public class LoginSteps {
 
 	}
 
-	@Quando("^eu clico no botao acessar$")
+	@Quando("^eu clico no botão acessar$")
 	public void eu_clico_no_botao_acessar() throws Throwable {
 	    page.clicaNoBotaoAcessar();
 		ReportUtils.logMensagem(Status.INFO, "Quando eu clico no botão acessar'", seleniumUtils.getScreenshotReport());

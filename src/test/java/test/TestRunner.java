@@ -11,11 +11,11 @@ import org.testng.annotations.Test;
 		features = "src/test/java/aFeatures",
 		plugin = "pretty",
 		snippets = CucumberOptions.SnippetType.CAMELCASE,
-		glue = {""}, 
+		glue = {""},
 		monochrome = true, 
 		dryRun = false, 
 		//strict = true,
-		tags = "@acessaSistemaPCA"
+		tags = "@PCAInformeAcessaTelaSelecao"
 		)
 
 @Test(priority = 11)

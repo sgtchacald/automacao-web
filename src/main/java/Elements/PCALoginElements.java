@@ -4,7 +4,7 @@ import Utils.seleniumUtils;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 
-public class LoginElements extends seleniumUtils{
+public class PCALoginElements extends seleniumUtils{
 
 	@FindBy(xpath = "//*[contains(text(),'CPF do Usuário')]")
 	public WebElement CAMPO_TXT_LABEL_LOGIN;

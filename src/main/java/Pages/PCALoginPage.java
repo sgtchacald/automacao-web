@@ -1,18 +1,19 @@
 package Pages;
 
-import Elements.LoginElements;
+import Elements.PCALoginElements;
 import Setups.TestRule;
+import Utils.seleniumUtils;
 import org.junit.platform.commons.util.StringUtils;
-import org.openqa.selenium.Dimension;
+import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.support.PageFactory;
 
-public class LoginPage extends LoginElements {
+public class PCALoginPage extends PCALoginElements {
 
-	public LoginPage() {
-		driver = TestRule.getDriver();
+	public PCALoginPage() {
+		seleniumUtils.driver = TestRule.getDriver();
 		PageFactory.initElements(TestRule.getDriver(), this);
 	}
-	
+
 	public void acessaURL(String url) {
 		driver.navigate().to(url);
 	}
@@ -46,7 +47,26 @@ public class LoginPage extends LoginElements {
 	}
 
 	public boolean validaExistenciaModalPaginaPrincipalAdminPCA(){
-		return verificaExistenciaDeElementoNaTela(MODAL_TELA_INICIAL_ADMINISTRACAO_PCA, 1);
+		boolean existeModal = verificaExistenciaDeElementoNaTela(MODAL_TELA_INICIAL_ADMINISTRACAO_PCA, 1);
+
+		if(existeModal){
+			MODAL_TELA_INICIAL_ADMINISTRACAO_PCA.click();
+		}
+
+		return existeModal;
 	}
 
+	public boolean fazAutenticacaoPCA() {
+		try {
+			this.acessaURL("https://hpca.rj.gov.br/login");
+			this.validaExistenciaCampoLogin();
+			this.preencheCampoLogin("033.478.067-51");
+			this.validaExistenciaCampoSenha();
+			this.preencheCampoSenha("Rejane@123");
+			this.clicaNoBotaoAcessar();
+			return true;
+		}catch (Exception e){
+			return false;
+		}
+	}
 }
