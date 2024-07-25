@@ -11,7 +11,7 @@ Funcionalidade: PCA, manter informes
     Então o sistema exibe a tela de seleção de informes
 
   @PCAInformeFazUmCadastro
-  Esquema do Cenário: Acessa o sistema PCA, entra na tela de seleção de informes
+  Esquema do Cenário: Acessa o sistema PCA, cadastra um informe e valida se o informe foi criado
     Dado que eu esteja autenticado no sistema PCA
     E que eu clique no menu Gestão
     E que eu clique no submenu Cadastro
